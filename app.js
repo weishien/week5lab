@@ -9,10 +9,12 @@ let db = [];
 let viewPaths = __dirname + '/public';
 
 // configure express to handle machine
+// tell express wherever in html, run this machine
 app.engine('html',ejs.renderFile);
 app.set('view engine','html');
 
 // parse application
+// generate the middleware
 app.use(bodyParser.urlencoded({
     extended:false
 }));
