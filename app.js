@@ -38,6 +38,7 @@ app.get('/newTask', function(req,res) {
     res.sendFile(viewPaths + '/newTask.html')
 });
 
+// listen to action '/incomingTask'
 // catch data input by clients and return static list task page
 app.post('/incomingTask', function(req,res) {
     console.log(req.body);
