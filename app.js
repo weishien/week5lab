@@ -37,7 +37,7 @@ app.post('/incomingTask', function(req,res) {
     console.log(req.body);
     db.push(req.body);
     console.log(db);
-    res.send("Thank you!")
+    res.render(viewPaths + '/listTasks.html', { task : db });
 });
 
 app.listen(8080);
