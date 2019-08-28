@@ -33,4 +33,11 @@ app.get('/newTask', function(req,res) {
     res.sendFile(viewPaths + '/newTask.html')
 });
 
+app.post('/incomingTask', function(req,res) {
+    console.log(req.body);
+    db.push(req.body);
+    console.log(db);
+    res.send("Thank you!")
+});
+
 app.listen(8080);
