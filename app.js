@@ -1,5 +1,5 @@
 let express = require('express');
-let bodyParser = require('body-parser');
+// let bodyParser = require('body-parser');
 let ejs = require('ejs');
 
 let app = express();
@@ -15,7 +15,7 @@ app.set('view engine','html');
 
 // parse application
 // generate the middleware
-app.use(bodyParser.urlencoded({
+app.use(express.urlencoded({
     extended:false
 }));
 
