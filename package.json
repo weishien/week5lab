@@ -3,15 +3,23 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "ejs": "^2.6.2",
-    "express": "^4.17.1"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weishien/week6lab.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/weishien/week6lab/issues"
+  },
+  "homepage": "https://github.com/weishien/week6lab#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "mongodb": "^3.3.2"
+  }
 }
